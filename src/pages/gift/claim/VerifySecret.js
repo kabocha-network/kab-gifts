@@ -29,7 +29,7 @@ export default function VerifySecret ({ claimGiftHandler }) {
   };
   return (
     <>
-      <Card.Body className="d-flex flex-column bg-black">
+      <Card.Body className="d-flex flex-column landing">
         <CardHeader
           title={'Claim Your Pizza'}
           cardText={[

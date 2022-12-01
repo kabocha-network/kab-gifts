@@ -9,7 +9,7 @@ export default function Landing () {
   const { apiState, giftTheme } = useSubstrate();
   return (
     <>
-      <Card.Body className="d-flex flex-column bg-black bg-opacity-10">
+      <Card.Body className="d-flex flex-column landing">
         <CardHeader
           title={`${giftTheme?.network} Pizza`}
           cardText={`Share your love of ${giftTheme?.network} with friends and invite them to the network. ${giftTheme?.network} Pizza lets you send ${giftTheme?.content} to anyone, even if they don’t have a ${giftTheme?.network} account.`}

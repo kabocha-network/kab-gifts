@@ -10,6 +10,10 @@ export default function Footer ({ className }) {
           <span className="d-none d-sm-inline">&nbsp;&nbsp;·&nbsp;&nbsp;</span>
         </div>
         <div>
+          Forked from <a href="https://github.com/hamidra">Hamidra</a>. Kabochified by <a href="https://githubcom/recentration">Ramsey</a>.
+          <span className="d-none d-sm-inline">&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+        </div>
+        <div>
           <span>
             <Link to="/privacy-policy">Privacy Policy</Link>
           </span>

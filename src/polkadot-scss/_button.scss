@@ -37,16 +37,17 @@
 }
 
 .btn-primary {
-  color: $primary;
-  background-color: transparent;
-  border-color: $primary;
+  color: brown;
+  background-color: rgb(255, 255, 14) !important;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  border: solid 1px $primary;
+  border: solid 8px rgb(172, 66, 0) !important;
   transition: all 0.2s ease, border 1ms ease;
   will-change: transform;
   transform: scale(0.999);
+  padding: 50px;
+  border-radius: 50%;
 
   &:before {
     content: "";
@@ -126,6 +127,11 @@
     z-index: -1;
     border: solid 1px $white;
   }
+}
+
+.btn-main {
+  height: 200px;
+  width: 200px;
 }
 
 .btn-white {

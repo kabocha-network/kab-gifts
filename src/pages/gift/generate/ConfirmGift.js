@@ -32,9 +32,15 @@ export default function ConfirmGift ({
           );
           const remarkTx = api.tx.system.remarkWithEvent('gift::create');
           const txs = [transferTx, remarkTx];
-          const info = await api.tx.utility.batchAll(txs).paymentInfo(address);
+          // const info = await api.tx.utility.batchAll(txs).paymentInfo(address);
+          const infotransfer = await api.tx.balances
+            .transfer(address,
+              chainAmount || 0)
+            .paymentInfo(address);
+          // const inforemark = await api.tx.paymentInfo(address);
 
-          let estimatedFee = utils.calcFeeAdjustments(info?.partialFee);
+
+          let estimatedFee = (utils.calcFeeAdjustments(infotransfer?.partialFee)) + (utils.calcFeeAdjustments(infotransfer?.partialFee));
           estimatedFee = estimatedFee.muln(giftFeeMultiplier);
           const fee = utils.fromChainUnit(estimatedFee, chainInfo?.decimals);
           setGiftFee(fee);

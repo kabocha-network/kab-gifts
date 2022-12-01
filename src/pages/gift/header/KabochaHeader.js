@@ -15,7 +15,7 @@ const AccountInfoBox = ({ accountAddress }) => {
   return (
     <Media className="d-flex align-items-center">
       <div className="mr-1">
-        <img src={KabochaIcon} />
+        <img className="kab-logo" src={KabochaIcon} />
       </div>
       <Media.Body>
         <Row>
@@ -67,7 +67,7 @@ export default function Header ({ selectedAccount }) {
                 className={location.pathname === '/claim' && 'active'}
                 onClick={() => history.push('/claim')}
               >
-                Claim KAB
+                Claim Pizza
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -75,7 +75,7 @@ export default function Header ({ selectedAccount }) {
                 className={location.pathname === '/generate' && 'active'}
                 onClick={() => history.push('/generate')}
               >
-                Gift KAB
+                Gift Pizza
               </Nav.Link>
             </Nav.Item>
           </Nav>

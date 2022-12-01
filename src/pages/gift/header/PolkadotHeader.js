@@ -124,7 +124,7 @@ export default function Header ({ selectedAccount }) {
                   }}
                 >
                   <Bird className="mr-2" size={18} />
-                  Gift KAB
+                  Gift Pizza
                 </Dropdown.Item>
               )}
             </Dropdown.Menu>

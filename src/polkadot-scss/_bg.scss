@@ -8,12 +8,17 @@
 }
 
 
+.kab-logo {
+  background: rgb(0, 0, 0);
+  max-height:100px;
+}
+
 body::before {
   // background: linear-gradient(128deg, #2ee600, #51ff25, #22aa00, #c20098);
   background-color: black;
-  background-image: url('https://cdn-icons-png.flaticon.com/512/2094/2094661.png'); 
+  background-image:  url('../images/pizza.png' ) ;
   background-repeat: repeat-y repeat-x;
-  background-size: 10% 10%;
+  background-size: 75px 75px;
   animation: gradient 12s ease infinite;
   content: '';
   z-index: -1;
@@ -61,6 +66,11 @@ body::before {
 
 .bg-black {
   background: $black !important;
+}
+
+.landing {
+  background: rgba(0, 0, 0, 0.746);
+  border-radius: 15px;
 }
 
 .bg-gray {
