@@ -16,7 +16,7 @@ export default function Claimed ({ amount, accountAddress }) {
         <CardHeader title={'Congratulations!'} />
         <Row className="justify-content-center flex-column align-items-center">
           <Col className="pt-4 d-flex justify-content-center align-items-center">
-            <Image style={{ width: 256 }} src={giftTheme.network === 'Polkadot' ? giftPolkadot : giftKusama} />
+            <Image style={{ width: 256 }} src={giftTheme.network === 'Kabocha' ? giftKabocha : giftKusama} />
           </Col>
           <Col className="pt-4">
             <p className="text-center text-secondary">

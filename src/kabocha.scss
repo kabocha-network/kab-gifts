@@ -1,0 +1,32 @@
+// Custom.scss
+
+$gray-100: #f9fafb;
+$gray-200: #f0f2f5;
+$gray-300: #dbe0d5;
+$gray-600: #6c757d;
+$gray-800: #333;
+$gray-900: #1e1e1e;
+
+$nav-pills-border-radius:100px 100px 100px 100px !important;;
+$nav-pills-link-active-color: #fff !important;
+$nav-pills-padding: 20px !important;
+$nav-pills-link-active-bg: rgb(166, 0, 0) !important;
+$navbar-dark-hover-color: #fff !important;
+
+@import '~bootstrap/scss/bootstrap';
+@import 'kabocha-scss/variables';
+
+@import 'kabocha-scss/bg';
+@import 'kabocha-scss/card';
+@import 'kabocha-scss/typography';
+@import 'kabocha-scss/button';
+@import 'kabocha-scss/forms';
+@import 'kabocha-scss/footer';
+@import 'kabocha-scss/header';
+@import 'kabocha-scss/seedphrase';
+@import 'kabocha-scss/modal';
+@import 'kabocha-scss/select';
+@import 'kabocha-scss/privacypolicy';
+@import 'kabocha-scss/about';
+@import 'kabocha-scss/landingpage';
+@import 'kabocha-scss/processing';

@@ -7,9 +7,9 @@ import { useSubstrate } from '../../../substrate-lib';
 export default function ConnectAccount ({ setAccountSourceHandler }) {
   const { apiState, giftTheme } = useSubstrate();
   return (
-    <Card.Body className="d-flex flex-column">
+    <Card.Body className="d-flex flex-column bg-black ">
       <CardHeader
-        title={`Claim Your ${giftTheme?.content} Gift`}
+        title={`Claim Your ${giftTheme?.content} Pizza`}
         cardText={[
           `Create a new ${giftTheme?.network} address to store your funds`,
           <br />,

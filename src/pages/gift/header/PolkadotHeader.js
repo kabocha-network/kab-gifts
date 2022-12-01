@@ -26,7 +26,8 @@ const AccountInfoBox = ({ accountAddress }) => {
 export default function Header ({ selectedAccount }) {
   const history = useHistory();
   const location = useLocation();
-  const alternativeApp = config.ALTERNATIVE_APP_URL;
+  const kusamaApp = config.KUSAMA_APP_URL;
+  const kabochaApp = config.KABOCHA_APP_URL;
 
   return (
     <>
@@ -102,16 +103,28 @@ export default function Header ({ selectedAccount }) {
                 <Gift className="mr-2" size={18} />
                 About Gifts
               </Dropdown.Item>
-              {alternativeApp && (
+              {kusamaApp && (
                 <Dropdown.Item
                   className="px-3"
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open(alternativeApp, '_blank');
+                    window.open(kusamaApp, '_blank');
                   }}
                 >
                   <Bird className="mr-2" size={18} />
                   Gift KSM
+                </Dropdown.Item>
+              )}
+              {kabochaApp && (
+                <Dropdown.Item
+                  className="px-3"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(kabochaApp, '_blank');
+                  }}
+                >
+                  <Bird className="mr-2" size={18} />
+                  Gift KAB
                 </Dropdown.Item>
               )}
             </Dropdown.Menu>

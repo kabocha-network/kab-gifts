@@ -308,7 +308,7 @@ export default function GenerateMain () {
       <Container className="justify-content-center align-items-center">
         <Row className="my-2 my-md-5 justify-content-center align-items-center">
           <Col className="my-md-3 d-flex justify-content-center align-items-center">
-            {step === 0 && giftTheme.network === 'Polkadot' && (
+            {step === 0 && giftTheme.network === 'Kabocha' && (
               <div className="landingpage">{currentComponent}</div>
             )}
             {step > 0 && (

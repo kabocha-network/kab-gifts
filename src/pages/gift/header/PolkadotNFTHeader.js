@@ -26,7 +26,7 @@ const AccountInfoBox = ({ accountAddress }) => {
 export default function Header ({ selectedAccount }) {
   const history = useHistory();
   const location = useLocation();
-  const alternativeApp = config.ALTERNATIVE_APP_URL;
+  const kusamaApp = config.KUSAMA_APP_URL;
 
   return (
     <>
@@ -71,12 +71,12 @@ export default function Header ({ selectedAccount }) {
               aria-labelledby="dropdownMenuButton"
               className="dropdown-menu-right mt-2 shadow"
             >
-              {alternativeApp && (
+              {kusamaApp && (
                 <Dropdown.Item
                   className="px-3"
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open(alternativeApp, '_blank');
+                    window.open(kusamaApp, '_blank');
                   }}
                 >
                   <Bird className="mr-2" size={18} />

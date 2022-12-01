@@ -14,7 +14,7 @@ export default function ProcessExplainerCard ({ giftTheme }) {
             <div>
               <div className="card-image card-image--create"></div>
             </div>
-            <h3 className="mb-3">Create Gift</h3>
+            <h3 className="mb-3">Create Pizza Gift</h3>
             <div className="card-text card-text--explanation">
               Enter a gift amount and generate a unique gift secret.
             </div>
@@ -25,7 +25,7 @@ export default function ProcessExplainerCard ({ giftTheme }) {
             <div>
               <div className="card-image card-image--share"></div>
             </div>
-            <h3 className="mb-3">Share Gift</h3>
+            <h3 className="mb-3">Share Pizza</h3>
             <div className="card-text card-text--explanation">
               Send the gift secret to a friend or family member.
             </div>
@@ -36,9 +36,9 @@ export default function ProcessExplainerCard ({ giftTheme }) {
             <div>
               <div className="card-image card-image--claim"></div>
             </div>
-            <h3 className="mb-3">Claim Gift</h3>
+            <h3 className="mb-3">Claim Pizza</h3>
             <div className="card-text card-text--explanation">
-              The recipient creates a new {giftTheme.network} address and claims their gift.
+              The recipient creates a new {giftTheme.network} address and claims their tasty gift.
             </div>
           </div>
         </div>

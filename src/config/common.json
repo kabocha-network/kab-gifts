@@ -1,11 +1,13 @@
 {
-  "APP_NAME": "Polkadot Gifts",
+  "APP_NAME": "Kabocha Pizza",
   "DEVELOPMENT_KEYRING": true,
   "RPC": {},
-  "THEME": "polkadot",
+  "THEME": "kabocha",
   "MAX_AMOUNT": 100,
-  "CLAIM_URL": "https://hamidra.github.io/dotdrop/#/claim",
-  "ALTERNATIVE_APP_URL": "https://gifts.kusama.network",
+  "CLAIM_URL": "https://pizza.kabocha.network/dotdrop/#/claim",
+  "KUSAMA_APP_URL": "https://gifts.kusama.network",
+  "KABOCHA_APP_URL": "https://pizza.kabocha.network",
+  "POLKADOT_APP_URL": "https://gifts.polkadot.network",
   "ADDED_FEE_MULTIPLIER": 2,
   "CHAIN_SCANNER_URL": "https://polkadot.subscan.io"
 }

@@ -9,10 +9,10 @@ export default function Landing () {
   const { apiState, giftTheme } = useSubstrate();
   return (
     <>
-      <Card.Body className="d-flex flex-column">
+      <Card.Body className="d-flex flex-column bg-black bg-opacity-10">
         <CardHeader
-          title={`${giftTheme?.network} Gifts`}
-          cardText={`Share your love of ${giftTheme?.network} with friends and family and help onboard them to the network. ${giftTheme?.network} Gifts lets you send ${giftTheme?.content} to anyone, even if they don’t have a ${giftTheme?.network} account.`}
+          title={`${giftTheme?.network} Pizza`}
+          cardText={`Share your love of ${giftTheme?.network} with friends and invite them to the network. ${giftTheme?.network} Pizza lets you send ${giftTheme?.content} to anyone, even if they don’t have a ${giftTheme?.network} account.`}
         />
         <Row className="justify-content-center align-items-center">
           <Col className="d-flex flex-column justify-content-around align-items-center">
@@ -21,7 +21,7 @@ export default function Landing () {
                 className="btn btn-primary btn-lg"
                 disabled={apiState !== 'READY'}
                 onClick={() => nextStep()}>
-                Send a Gift
+                Send Pizza
               </button>
             </div>
             <a

@@ -18,11 +18,19 @@ const getGiftTheme = (theme) => {
 
   // default values
   const giftTheme = {
-    content: 'DOT',
-    network: 'Polkadot'
+    content: 'KAB',
+    network: 'Kabocha'
   };
   switch (theme) {
-    case 'polkadot':
+      case 'polkadot':
+      giftTheme.content = 'KAB';
+      giftTheme.network = 'Kabocha';
+      break;
+    case 'kabochaseed':
+      giftTheme.content = 'SEED';
+      giftTheme.network = 'Kabocha';
+      break;
+    case 'polkadot2':
       giftTheme.content = 'DOT';
       giftTheme.network = 'Polkadot';
       break;
@@ -140,7 +148,7 @@ const connect = (state, dispatch) => {
 const queryChainInfo = async (api, state, dispatch) => {
   const chainInfo = {
     decimals: api.registry?.chainDecimals[0] || 12,
-    token: (api.registry?.chainTokens[0] || 'DOT')?.toUpperCase(),
+    token: (api.registry?.chainTokens[0] || 'KAB')?.toUpperCase(),
     genesisHash: api.genesisHash,
     ss58Format: (api.registry?.chainSS58 || api.registry?.chainSS58 == 0) ? api.registry?.chainSS58 : 42,
     existentialDeposit:
@@ -151,7 +159,7 @@ const queryChainInfo = async (api, state, dispatch) => {
   // ToDo: remove this when the pallet is deployed on polkadot
   // default substrate token to Dot for demo purpose
   if (chainInfo?.token === 'UNIT') {
-    chainInfo.token = 'DOT';
+    chainInfo.token = 'KAB';
   }
   console.log(chainInfo);
   dispatch({ type: 'CONNECT_SUCCESS', payload: chainInfo });

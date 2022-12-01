@@ -168,7 +168,7 @@ export default function ClaimMain () {
       <Container>
         <Row className="my-2 my-md-5 justify-content-center align-items-center">
           <Col className="my-md-3 d-flex justify-content-center align-items-center">
-            {step === 0 && giftTheme.network === 'Polkadot' && (
+            {step === 0 && giftTheme.network === 'Kabocha' && (
               <div className="landingpage">{currentStepComponent}</div>
             )}
             {step > 0 && (

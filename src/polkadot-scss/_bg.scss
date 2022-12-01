@@ -9,9 +9,12 @@
 
 
 body::before {
-  background: linear-gradient(128deg, #e73c7e, #c40061, #5d27cb, #e73c7e);
-  background-size: 400% 400%;
-  animation: gradient 42s ease infinite;
+  // background: linear-gradient(128deg, #2ee600, #51ff25, #22aa00, #c20098);
+  background-color: black;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2094/2094661.png'); 
+  background-repeat: repeat-y repeat-x;
+  background-size: 10% 10%;
+  animation: gradient 12s ease infinite;
   content: '';
   z-index: -1;
   position: fixed;

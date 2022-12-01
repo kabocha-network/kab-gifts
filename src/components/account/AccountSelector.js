@@ -25,7 +25,7 @@ const AccountToggleItem = ({ account, balance, token }) => {
     ContentElement = (
       <Media className="d-flex align-items-center">
         <div className="mr-2">
-          <Identicon value={account?.address} size={40} theme="polkadot" />
+          <Identicon value={account?.address} size={40} theme="kabocha" />
         </div>
         <Media.Body>
           <Row className="flex-column flex-sm-row">

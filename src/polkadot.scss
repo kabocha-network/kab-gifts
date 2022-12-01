@@ -1,7 +1,7 @@
 // Custom.scss
 
 // set font family
-$font-family-base: 'Work Sans', sans-serif;
+$font-family-base: 'Space Grotesk', sans-serif;
 
 // Button
 $btn-border-radius: 1.5rem;
@@ -31,11 +31,11 @@ $btn-border-radius-sm: 1.5rem;
 }
 
 .text-button:hover {
-  color: #c40061 !important;
+  color: #6aff00 !important;
 }
 
 .link-button:hover {
-  color: #c40061 !important;
+  color: #6aff00 !important;
 }
 
 .link-button:focus {
@@ -47,7 +47,7 @@ $card-border-radius: 20px;
 
 // Set booststrap custom theme
 $theme-colors: (
-  'primary': #e6007a,
+  'primary': #6aff00,
 );
 
 $gray-100: #f9fafb;
@@ -121,7 +121,7 @@ $h5-font-size: 1rem;
 
 .navbar {
   img {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
     &.logo {
       height: 2.5rem;
       width: 2.5rem;
@@ -133,16 +133,20 @@ $h5-font-size: 1rem;
   }
 
   #dropdownMenuButton {
-    background-color: #fff !important;
-    border: none;
-    color: $gray-600;
+    background-color: yellow !important;
+    color: rgb(250, 121, 0);
     transition: none;
     transform: none;
     padding: 0.5625rem !important;
+    border-radius: 100px !important;
+    border: 5px !important;
+    border-color: brown !important;
+    border-style: solid !important;
+    border-width: 5px !important;
 
     &:before,
     &:hover {
-      background-color: $gray-100;
+      background-color: greenyellow;
       color: $gray-900;
       border: none;
       transition: none;
@@ -166,11 +170,13 @@ $h5-font-size: 1rem;
 }
 
 .nav-pills {
-  background-color: #fff;
+  background-color: yellow;
+  color: rgb(48, 48, 48) !important;
+  
 }
 $nav-pills-border-radius: 1.5rem !important;
-$nav-pills-link-active-color: $gray-900 !important;
-$nav-pills-link-active-bg: $gray-200 !important;
+$nav-pills-link-active-color: rgb(255, 255, 255) !important;
+$nav-pills-link-active-bg: black !important;
 
 $navbar-nav-link-padding-x: 1.25rem;
 $navbar-dark-color: $gray-600;

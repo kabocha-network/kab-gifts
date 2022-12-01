@@ -6,17 +6,17 @@ import { Circle, DotsThree, ImageSquare } from 'phosphor-react';
 import config from '../../../config';
 import KusamaLogo from '../../../images/kusama_logo.png';
 import KusamaIcon from '../../../images/kusama_icon.png';
+import KabochaIcon from '../../../images/kabocha.svg';
+
+
 
 const AccountInfoBox = ({ accountAddress }) => {
   const addressStr = stringHelpers.truncateMiddle(accountAddress, 5);
   return (
     <Media className="d-flex align-items-center">
-      <Identicon
-        className="mr-1"
-        value={accountAddress}
-        size={20}
-        theme="kusama"
-      />
+      <div className="mr-1">
+        <img src={KabochaIcon} />
+      </div>
       <Media.Body>
         <Row>
           <Col>
@@ -31,6 +31,8 @@ export default function Header ({ selectedAccount }) {
   const history = useHistory();
   const location = useLocation();
   const polkadotApp = config.POLKADOT_APP_URL;
+  const kusamaApp = config.KUSAMA_APP_URL;
+
   return (
     <>
       <Navbar
@@ -43,14 +45,14 @@ export default function Header ({ selectedAccount }) {
             <img
               width={120}
               className="p-1 d-none d-sm-inline-block"
-              src={KusamaLogo}
-              alt={'Kusama'}
+              src={KabochaIcon}
+              alt={'Kabocha'}
             />
             <img
               width={42}
               className="p-1 d-sm-none"
-              src={KusamaIcon}
-              alt={'Kusama'}
+              src={KabochaIcon}
+              alt={'Kabocha'}
             />
           </a>
         </Navbar.Brand>
@@ -65,7 +67,7 @@ export default function Header ({ selectedAccount }) {
                 className={location.pathname === '/claim' && 'active'}
                 onClick={() => history.push('/claim')}
               >
-                Claim
+                Claim KAB
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -73,7 +75,7 @@ export default function Header ({ selectedAccount }) {
                 className={location.pathname === '/generate' && 'active'}
                 onClick={() => history.push('/generate')}
               >
-                New Gift
+                Gift KAB
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -114,9 +116,9 @@ export default function Header ({ selectedAccount }) {
                 onClick={() => history.push('/about')}
               >
                 <ImageSquare className="mr-2" size={18} />
-                About Gifts
+                About Pizza
               </Dropdown.Item>
-              {polkadotApp && (
+              {/* {polkadotApp && (
                 <Dropdown.Item
                   className="px-3"
                   onClick={(e) => {
@@ -125,9 +127,23 @@ export default function Header ({ selectedAccount }) {
                   }}
                 >
                   <Circle className="mr-2" size={18} />
-                  Gift DOT
+                  Gift EDG
                 </Dropdown.Item>
+                
               )}
+               {kusamaApp && (
+                <Dropdown.Item
+                  className="px-3"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(kusamaApp, '_blank');
+                  }}
+                >
+                  <Circle className="mr-2" size={18} />
+                  Gift KSM
+                </Dropdown.Item>
+                
+              )} */}
             </Dropdown.Menu>
           </Dropdown>
         </div>
