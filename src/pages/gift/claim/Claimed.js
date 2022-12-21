@@ -1,6 +1,8 @@
 import { Row, Col, Card, Image } from 'react-bootstrap';
 import CardHeader from '../../../components/CardHeader';
 import giftPolkadot from '../../../images/Gift_Polkadot.svg';
+import giftKabocha from '../../../images/kabocha.svg';
+
 import giftKusama from '../../../images/Gift_Kusama.svg';
 import { useHistory } from 'react-router-dom';
 import { useSubstrate, utils } from '../../../substrate-lib';
@@ -16,7 +18,7 @@ export default function Claimed ({ amount, accountAddress }) {
         <CardHeader title={'Congratulations!'} />
         <Row className="justify-content-center flex-column align-items-center">
           <Col className="pt-4 d-flex justify-content-center align-items-center">
-            <Image style={{ width: 256 }} src={giftTheme.network === 'Kabocha' ? giftKabocha : giftKusama} />
+            {/* <Image style={{ width: 256 }} src={giftTheme.network === 'Kabocha' ? giftKabocha : giftKusama} /> */}
           </Col>
           <Col className="pt-4">
             <p className="text-center text-secondary">

@@ -1,5 +1,5 @@
 {
-  "PROVIDER_SOCKET": "wss://soupcan1.jelliedowl.com",
+  "PROVIDER_SOCKET": "wss://kabocha.jelliedowl.com",
   "DEVELOPMENT_KEYRING": true,
-  "CLAIM_URL":"http://localhost:3000/dotdrop/#/claim"
+  "CLAIM_URL":"https://pizza.kabocha.network/#/claim"
 }
