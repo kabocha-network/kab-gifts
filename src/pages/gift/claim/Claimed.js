@@ -1,6 +1,8 @@
 import { Row, Col, Card, Image } from 'react-bootstrap';
 import CardHeader from '../../../components/CardHeader';
 import giftPolkadot from '../../../images/Gift_Polkadot.svg';
+import giftKabocha from '../../../images/kabocha.svg';
+
 import giftKusama from '../../../images/Gift_Kusama.svg';
 import { useHistory } from 'react-router-dom';
 import { useSubstrate, utils } from '../../../substrate-lib';
