@@ -4,7 +4,7 @@
   "RPC": {},
   "THEME": "kabocha",
   "MAX_AMOUNT": 100,
-  "CLAIM_URL": "https://pizza.kabocha.network/dotdrop/#/claim",
+  "CLAIM_URL": "https://pizza.kabocha.network/#/claim",
   "KUSAMA_APP_URL": "https://gifts.kusama.network",
   "KABOCHA_APP_URL": "https://pizza.kabocha.network",
   "POLKADOT_APP_URL": "https://gifts.polkadot.network",
